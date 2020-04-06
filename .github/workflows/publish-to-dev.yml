@@ -1,0 +1,23 @@
+name: Publish to dev site on push exept on master
+on: 
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  FTP-Deploy-To-Dev:
+    name: FTP-Deploy-To-Dev
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-To-Dev
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER_DEV }}
+        ftp-username: ${{ secrets.FTP_USER_DEV }}
+        ftp-password: ${{ secrets.FTP_PASSWORD_DEV }}
+        git-ftp-args: --insecure
+
+        
