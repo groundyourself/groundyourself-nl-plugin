@@ -1,0 +1,23 @@
+name: Publish to prd
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  FTP-Deploy-To-Prd:
+    name: FTP-Deploy-To-Prd
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-To-Prd
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER_PRD }}
+        ftp-username: ${{ secrets.FTP_USER_PRD }}
+        ftp-password: ${{ secrets.FTP_PASSWORD_PRD }}
+        git-ftp-args: --insecure
+
+        
