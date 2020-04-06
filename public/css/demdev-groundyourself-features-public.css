@@ -1,0 +1,16 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ #learndash_back_to_lesson {
+     display:none !important;
+ }
+
+ #gy_back_to_parent {
+     margin-bottom: 1em;
+ }
+ 
+ #gy_back_to_parent a {
+     font-size: 0.7em;
+ }
