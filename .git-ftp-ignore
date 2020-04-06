@@ -1,0 +1,10 @@
+# ignore git related files
+.gitignore
+*/.gitignore      # ignore files in sub directories
+*/.gitkeep
+.git-ftp-ignore
+.git-ftp-include
+.gitlab-ci.yml
+
+# ignore github files
+.github/*
