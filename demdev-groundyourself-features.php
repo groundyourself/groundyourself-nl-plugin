@@ -13,7 +13,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Groundyourself features and customizations
- * Plugin URI:        http://example.com/demdev-groundyourself-features-uri/
+ * Plugin URI:        https://github.com/demeesterdev/demdev-groundyourself-features
  * Description:       Features and customizations for groundyourself.nl and its learndash environment
  * Version:           1.0.0
  * Author:            demeester.dev
