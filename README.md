@@ -1,5 +1,7 @@
 # demdev-groundyourself-features
 
+> ** groundyourself moved away from wordpress. archived feature plugin **
+
 wordpress plugin to add features to groundyourself.nl
 
 ## added features:
